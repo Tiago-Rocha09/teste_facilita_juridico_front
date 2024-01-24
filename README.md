@@ -30,7 +30,7 @@ npm install
 npm run dev
 ```
 
-2. O aplicativo estará disponível em http://localhost:3333 por padrão. Abra seu navegador e acesse essa URL para visualizar o aplicativo.
+2. O aplicativo estará disponível em http://localhost:3000 por padrão. Abra seu navegador e acesse essa URL para visualizar o aplicativo.
 
 ```bash
 cd teste_tiago_rocha
