@@ -1,95 +1,74 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Container } from "@/components/container";
+import styles from "../assets/styles/page.module.scss";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <Container>
+        <h2>Cadastro de clientes</h2>
+        <form className={styles.form}>
+          <fieldset>
+            <label>Nome completo</label>
+            <input />
+          </fieldset>
+
+          <fieldset>
+            <label>E-mail</label>
+            <input />
+          </fieldset>
+
+          <fieldset>
+            <label>Telefone</label>
+            <input />
+          </fieldset>
+
+          <fieldset>
+            <label>Coordenada X</label>
+            <input />
+          </fieldset>
+
+          <fieldset>
+            <label>Coordenada Y</label>
+            <input />
+          </fieldset>
+          <div>
+            <button className={styles.secondary}>Limpar</button>
+            <button>Salvar</button>
+          </div>
+        </form>
+      </Container>
+      <Container>
+        <div className={styles.sectionHeader}>
+          <h2>Listagem de clientes</h2>
+          <input placeholder="Pesquise por nome, telefone ou email..." />
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className={styles.tableContainer}>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Coordenadas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiago Rocha</td>
+                <td>tiagoarrocha@gmail.com</td>
+                <td>(94) 99262-8331</td>
+                <td>(1,6)</td>
+              </tr>
+              <tr>
+                <td>Tiago Rocha</td>
+                <td>tiagoarrocha@gmail.com</td>
+                <td>(94) 99262-8331</td>
+                <td>(1,6)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </Container>
     </main>
   );
 }
