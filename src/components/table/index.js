@@ -15,7 +15,8 @@ export const Table = ({ customers, showOrder }) => {
           </tr>
         </thead>
         <tbody>
-          {customers.map((item, index) => (
+          
+          {customers?.length ? customers?.map((item, index) => (
             <tr key={index}>
               {showOrder ? <td>{index + 1}º</td> : null}
               <td>{item.name}</td>
@@ -23,7 +24,11 @@ export const Table = ({ customers, showOrder }) => {
               <td>{phoneMask(item.phone)}</td>
               <td>{item.coordinates}</td>
             </tr>
-          ))}
+            )) : 
+            <tr>
+              <td colspan={showOrder ? 5 : 4} className={styles.empty}>Nenhum registro encontrado</td>
+            </tr>
+          }
         </tbody>
       </table>
     </div>
