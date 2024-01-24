@@ -7,13 +7,13 @@ Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/Tiago-Rocha09/teste_facilita_juridico_front.git teste_tiago_rocha
+git clone https://github.com/Tiago-Rocha09/teste_facilita_juridico_front.git teste_tiago_rocha_front
 ```
 
 2. Navegue até o diretório do aplicativo:
 
 ```bash
-cd teste_tiago_rocha
+cd teste_tiago_rocha_front
 ```
 
 3. Instale as dependências:
@@ -31,10 +31,6 @@ npm run dev
 ```
 
 2. O aplicativo estará disponível em http://localhost:3000 por padrão. Abra seu navegador e acesse essa URL para visualizar o aplicativo.
-
-```bash
-cd teste_tiago_rocha
-```
 
 ## Configurações do Ambiente
 
