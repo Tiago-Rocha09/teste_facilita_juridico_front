@@ -1,0 +1,23 @@
+.tableContainer {
+  overflow-x: hidden;
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 16px;
+
+    td,
+    th {
+      border-top: 1px solid var(--background);
+      text-align: left;
+      padding: 16px;
+
+      @media (max-width: 676px) {
+        min-width: 160px;
+      }
+    }
+  }
+  @media (max-width: 676px) {
+    overflow-x: scroll;
+  }
+}

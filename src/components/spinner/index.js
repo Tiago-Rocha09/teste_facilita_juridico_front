@@ -1,3 +1,5 @@
+import styles from "./styles.module.scss";
+
 export const Spinner = () => {
-  return <span class="loader"></span>;
+  return <span className={styles.loader}></span>;
 };
